@@ -1,0 +1,20 @@
+PODS:
+  - AFNetworking (1.3.2)
+  - LyricsWikia (0.0.1):
+    - AFNetworking (= 1.3.2)
+  - SenTestingKitAsync (1.0.6)
+
+DEPENDENCIES:
+  - LyricsWikia (from `../`)
+  - SenTestingKitAsync (~> 1.0)
+
+EXTERNAL SOURCES:
+  LyricsWikia:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: 7f9bcd7c287a75476cd5c61e82fd3380e93e4c54
+  LyricsWikia: de1a2d8ea0b968150a6cbb03fe6836bc44e1d633
+  SenTestingKitAsync: 32270df7e96442b34d5542859622ce7fef7d7c38
+
+COCOAPODS: 0.23.0

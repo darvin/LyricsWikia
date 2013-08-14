@@ -1,0 +1,2 @@
+PODS_OSX_ASYNCSENTEST_FRAMEWORK_SEARCH_PATHS = "$(SDKROOT)/Developer/Library/Frameworks" "$(DEVELOPER_LIBRARY_DIR)/Frameworks" $(inherited)
+PODS_OSX_ASYNCSENTEST_OTHER_LDFLAGS = -framework SenTestingKit

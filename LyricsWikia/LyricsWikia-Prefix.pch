@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'LyricsWikia' target in the 'LyricsWikia' project
-//
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-#endif
