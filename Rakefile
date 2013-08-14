@@ -1,14 +1,11 @@
 namespace :test do
-  task :prepare do
-    system(%Q{mkdir -p "LyricsWikiaTests/LyricsWikia Tests.xcodeproj/xcshareddata/xcschemes" && cp LyricsWikiaTests/Schemes/*.xcscheme "LyricsWikiaTests/LyricsWikia Tests.xcodeproj/xcshareddata/xcschemes/"})
-  end
   desc "Run the LyricsWikia Tests for iOS"
-  task :ios => :prepare do
+  task :ios do
     $ios_success = system("xctool -workspace LyricsWikia.xcworkspace -scheme 'iOS Tests' -sdk iphonesimulator -configuration Release test -test-sdk iphonesimulator")
   end
 
   desc "Run the LyricsWikia Tests for Mac OS X"
-  task :osx => :prepare do
+  task :osx do
     $osx_success = system("xctool -workspace LyricsWikia.xcworkspace -scheme 'OSX Tests' -sdk macosx -configuration Release test -test-sdk macosx")
   end
 end
