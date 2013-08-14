@@ -1,3 +1,4 @@
 language: objective-c
 before_install:
     - cd LyricsWikiaTests && pod install && cd $TRAVIS_BUILD_DIR
+script: rake test
