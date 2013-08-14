@@ -1,6 +1,6 @@
 namespace :test do
   task :prepare do
-    # system(%Q{mkdir -p "Tests/AFNetworking Tests.xcodeproj/xcshareddata/xcschemes" && cp Tests/Schemes/*.xcscheme "Tests/AFNetworking Tests.xcodeproj/xcshareddata/xcschemes/"})
+    system(%Q{mkdir -p "LyricsWikiaTests/LyricsWikia Tests.xcodeproj/xcshareddata/xcschemes" && cp LyricsWikiaTests/Schemes/*.xcscheme "LyricsWikiaTests/LyricsWikia Tests.xcodeproj/xcshareddata/xcschemes/"})
   end
   desc "Run the LyricsWikia Tests for iOS"
   task :ios => :prepare do
