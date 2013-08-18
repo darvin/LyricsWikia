@@ -46,7 +46,7 @@
         NSRange rangeStart = [responseString rangeOfString:@"&lt;lyrics>"];
         NSRange rangeEnd = [responseString rangeOfString:@"&lt;/lyrics>"];
         NSRange lyricsRange = NSMakeRange(rangeStart.location+rangeStart.length, rangeEnd.location - (rangeStart.location+rangeStart.length));
-        NSString *lyrics = [responseString substringWithRange:lyricsRange];
+        NSString *lyrics = [[responseString substringWithRange:lyricsRange] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 
         completion(nil, lyrics);
         
